@@ -33,11 +33,11 @@ public class Invoice {
     @XmlElement(name="tns:P_6")
     private String deliveryEnd;
     @XmlElement(name="tns:P_13_1")
-    private Double nettoValue;
+    private double nettoValue;
     @XmlElement(name="tns:P_14_1")
-    private Double nettoTax;
+    private double nettoTax;
     @XmlElement(name="tns:P_15")
-    private Double sum;
+    private double sum;
     @XmlElement(name="tns:P_16")
     private boolean p16;
     @XmlElement(name="tns:P_17")

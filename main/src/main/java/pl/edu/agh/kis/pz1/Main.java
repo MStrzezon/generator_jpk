@@ -23,7 +23,7 @@ public class Main {
         } else if (args[0].split("\\.")[1].equals("xlsx")) {
             Write.marshal(Read.readXLSX(args[0]), args[1]);
         } else {
-            logger.error("Only .csv and .xlsx files are serverd.");
+            logger.error("Only .csv and .xlsx files are served.");
         }
     }
 }
