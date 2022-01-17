@@ -4,7 +4,7 @@
         <tns:KodFormularza kodSystemowy="JPK_FA (3)" wersjaSchemy="1-0">JPK_FA</tns:KodFormularza>
         <tns:WariantFormularza>3</tns:WariantFormularza>
         <tns:CelZlozenia>1</tns:CelZlozenia>
-        <tns:DataWytworzeniaJPK>2022-01-17T23:19:52.213210500</tns:DataWytworzeniaJPK>
+        <tns:DataWytworzeniaJPK>2022-01-17T23:25:24.249572</tns:DataWytworzeniaJPK>
         <tns:DataOd>2020-10-01</tns:DataOd>
         <tns:DataDo>2020-12-31</tns:DataDo>
         <tns:KodUrzedu>1208</tns:KodUrzedu>
@@ -119,7 +119,7 @@
         <tns:P_3D>ul. Feliksa Radwańskiego 15/1, 30-065 Kraków</tns:P_3D>
         <tns:P_4A>PL</tns:P_4A>
         <tns:P_4B>6762484560</tns:P_4B>
-        <tns:P_5B>113-29-95-753</tns:P_5B>
+        <tns:P_5B>113-29-95-753 </tns:P_5B>
         <tns:P_6>2020-10-14</tns:P_6>
         <tns:P_13_1>76250.0</tns:P_13_1>
         <tns:P_14_1>17537.5</tns:P_14_1>
@@ -142,7 +142,7 @@
         <tns:P_1>2020-10-15</tns:P_1>
         <tns:P_2A>1-15/10/2020</tns:P_2A>
         <tns:P_3A>Firma2</tns:P_3A>
-        <tns:P_3B>Ul. Zamkowa 1, 31 – 200 Kraków</tns:P_3B>
+        <tns:P_3B>Ul. Zamkowa 1, 31 – 200 Kraków </tns:P_3B>
         <tns:P_3C>"CORE LOGIC" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ</tns:P_3C>
         <tns:P_3D>ul. Feliksa Radwańskiego 15/1, 30-065 Kraków</tns:P_3D>
         <tns:P_4A>PL</tns:P_4A>
@@ -170,7 +170,7 @@
         <tns:P_1>2020-10-15</tns:P_1>
         <tns:P_2A>2-15/10/2020</tns:P_2A>
         <tns:P_3A>Firma2</tns:P_3A>
-        <tns:P_3B>Ul. Zamkowa 1, 31 – 200 Kraków</tns:P_3B>
+        <tns:P_3B>Ul. Zamkowa 1, 31 – 200 Kraków </tns:P_3B>
         <tns:P_3C>"CORE LOGIC" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ</tns:P_3C>
         <tns:P_3D>ul. Feliksa Radwańskiego 15/1, 30-065 Kraków</tns:P_3D>
         <tns:P_4A>PL</tns:P_4A>
@@ -198,7 +198,7 @@
         <tns:P_1>2020-10-15</tns:P_1>
         <tns:P_2A>3-15/10/2020</tns:P_2A>
         <tns:P_3A>Firma2</tns:P_3A>
-        <tns:P_3B>Ul. Zamkowa 1, 31 – 200 Kraków</tns:P_3B>
+        <tns:P_3B>Ul. Zamkowa 1, 31 – 200 Kraków </tns:P_3B>
         <tns:P_3C>"CORE LOGIC" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ</tns:P_3C>
         <tns:P_3D>ul. Feliksa Radwańskiego 15/1, 30-065 Kraków</tns:P_3D>
         <tns:P_4A>PL</tns:P_4A>
@@ -226,7 +226,7 @@
         <tns:P_1>2020-10-16</tns:P_1>
         <tns:P_2A>1-16/10/2020</tns:P_2A>
         <tns:P_3A>Firma2</tns:P_3A>
-        <tns:P_3B>Ul. Zamkowa 1, 31 – 200 Kraków</tns:P_3B>
+        <tns:P_3B>Ul. Zamkowa 1, 31 – 200 Kraków </tns:P_3B>
         <tns:P_3C>"CORE LOGIC" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ</tns:P_3C>
         <tns:P_3D>ul. Feliksa Radwańskiego 15/1, 30-065 Kraków</tns:P_3D>
         <tns:P_4A>PL</tns:P_4A>
@@ -534,7 +534,7 @@
         <tns:P_1>2020-11-17</tns:P_1>
         <tns:P_2A>1-17/11/2020</tns:P_2A>
         <tns:P_3A>Firma2</tns:P_3A>
-        <tns:P_3B>Ul. Zamkowa 1, 31 – 200 Kraków</tns:P_3B>
+        <tns:P_3B>Ul. Zamkowa 1, 31 – 200 Kraków </tns:P_3B>
         <tns:P_3C>"CORE LOGIC" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ</tns:P_3C>
         <tns:P_3D>ul. Feliksa Radwańskiego 15/1, 30-065 Kraków</tns:P_3D>
         <tns:P_4A>PL</tns:P_4A>
@@ -567,7 +567,7 @@
         <tns:P_3D>ul. Feliksa Radwańskiego 15/1, 30-065 Kraków</tns:P_3D>
         <tns:P_4A>PL</tns:P_4A>
         <tns:P_4B>6762484560</tns:P_4B>
-        <tns:P_5B>113-29-95-753</tns:P_5B>
+        <tns:P_5B>113-29-95-753 </tns:P_5B>
         <tns:P_6>2020-10-30</tns:P_6>
         <tns:P_13_1>34030.0</tns:P_13_1>
         <tns:P_14_1>7826.92</tns:P_14_1>
@@ -595,7 +595,7 @@
         <tns:P_3D>ul. Feliksa Radwańskiego 15/1, 30-065 Kraków</tns:P_3D>
         <tns:P_4A>PL</tns:P_4A>
         <tns:P_4B>6762484560</tns:P_4B>
-        <tns:P_5B>113-29-95-753</tns:P_5B>
+        <tns:P_5B>113-29-95-753 </tns:P_5B>
         <tns:P_6>2020-10-30</tns:P_6>
         <tns:P_13_1>12775.0</tns:P_13_1>
         <tns:P_14_1>2938.25</tns:P_14_1>
@@ -623,7 +623,7 @@
         <tns:P_3D>ul. Feliksa Radwańskiego 15/1, 30-065 Kraków</tns:P_3D>
         <tns:P_4A>PL</tns:P_4A>
         <tns:P_4B>6762484560</tns:P_4B>
-        <tns:P_5B>113-29-95-753</tns:P_5B>
+        <tns:P_5B>113-29-95-753 </tns:P_5B>
         <tns:P_6>2020-11-25</tns:P_6>
         <tns:P_13_1>85833.75</tns:P_13_1>
         <tns:P_14_1>19741.77</tns:P_14_1>
@@ -931,7 +931,7 @@
         <tns:P_3D>ul. Feliksa Radwańskiego 15/1, 30-065 Kraków</tns:P_3D>
         <tns:P_4A>PL</tns:P_4A>
         <tns:P_4B>6762484560</tns:P_4B>
-        <tns:P_5B>113-29-95-753</tns:P_5B>
+        <tns:P_5B>113-29-95-753 </tns:P_5B>
         <tns:P_6>2020-11-30</tns:P_6>
         <tns:P_13_1>28920.0</tns:P_13_1>
         <tns:P_14_1>6651.609999999999</tns:P_14_1>
@@ -959,7 +959,7 @@
         <tns:P_3D>ul. Feliksa Radwańskiego 15/1, 30-065 Kraków</tns:P_3D>
         <tns:P_4A>PL</tns:P_4A>
         <tns:P_4B>6762484560</tns:P_4B>
-        <tns:P_5B>113-29-95-753</tns:P_5B>
+        <tns:P_5B>113-29-95-753 </tns:P_5B>
         <tns:P_6>2020-11-30</tns:P_6>
         <tns:P_13_1>13543.75</tns:P_13_1>
         <tns:P_14_1>3115.06</tns:P_14_1>
@@ -987,7 +987,7 @@
         <tns:P_3D>ul. Feliksa Radwańskiego 15/1, 30-065 Kraków</tns:P_3D>
         <tns:P_4A>PL</tns:P_4A>
         <tns:P_4B>6762484560</tns:P_4B>
-        <tns:P_5B>113-29-95-753</tns:P_5B>
+        <tns:P_5B>113-29-95-753 </tns:P_5B>
         <tns:P_6>2020-12-14</tns:P_6>
         <tns:P_13_1>45093.75</tns:P_13_1>
         <tns:P_14_1>10371.56</tns:P_14_1>
@@ -1015,7 +1015,7 @@
         <tns:P_3D>ul. Feliksa Radwańskiego 15/1, 30-065 Kraków</tns:P_3D>
         <tns:P_4A>PL</tns:P_4A>
         <tns:P_4B>6762484560</tns:P_4B>
-        <tns:P_5B>531 30 92 922</tns:P_5B>
+        <tns:P_5B> 531 30 92 922</tns:P_5B>
         <tns:P_6>2020-12-14</tns:P_6>
         <tns:P_13_1>58240.0</tns:P_13_1>
         <tns:P_14_1>13395.2</tns:P_14_1>
@@ -1239,7 +1239,7 @@
         <tns:P_3D>ul. Feliksa Radwańskiego 15/1, 30-065 Kraków</tns:P_3D>
         <tns:P_4A>PL</tns:P_4A>
         <tns:P_4B>6762484560</tns:P_4B>
-        <tns:P_5B>113-29-95-753</tns:P_5B>
+        <tns:P_5B>113-29-95-753 </tns:P_5B>
         <tns:P_6>2020-12-30</tns:P_6>
         <tns:P_13_1>30833.75</tns:P_13_1>
         <tns:P_14_1>7091.790000000001</tns:P_14_1>
@@ -1267,7 +1267,7 @@
         <tns:P_3D>ul. Feliksa Radwańskiego 15/1, 30-065 Kraków</tns:P_3D>
         <tns:P_4A>PL</tns:P_4A>
         <tns:P_4B>6762484560</tns:P_4B>
-        <tns:P_5B>113-29-95-753</tns:P_5B>
+        <tns:P_5B>113-29-95-753 </tns:P_5B>
         <tns:P_6>2020-12-30</tns:P_6>
         <tns:P_13_1>13431.25</tns:P_13_1>
         <tns:P_14_1>3089.19</tns:P_14_1>

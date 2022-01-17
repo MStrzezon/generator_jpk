@@ -8,6 +8,10 @@ import javax.xml.bind.Marshaller;
 import java.io.File;
 
 public class Write {
+    private Write() {
+        throw new IllegalStateException("Utility class");
+    }
+
     public static void marshal(JPK invoices, String filename) throws JAXBException {
         JAXBContext context = JAXBContext.newInstance(JPK.class);
         Marshaller marshaller = context.createMarshaller();

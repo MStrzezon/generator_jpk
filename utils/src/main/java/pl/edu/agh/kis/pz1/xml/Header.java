@@ -2,7 +2,6 @@ package pl.edu.agh.kis.pz1.xml;
 
 import lombok.Getter;
 import lombok.Setter;
-import pl.edu.agh.kis.pz1.xml.FormCode;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

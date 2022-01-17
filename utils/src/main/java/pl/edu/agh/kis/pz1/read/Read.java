@@ -14,13 +14,15 @@ import java.io.*;
 import java.nio.charset.StandardCharsets;
 
 public class Read {
+    private Read() {
+        throw new IllegalStateException("Utility class");
+    }
+
     public static JPK readXLSX (String pathToFile) throws IOException {
         JPK jpk = new JPK();
         try (FileInputStream file = new FileInputStream(pathToFile)) {
             XSSFWorkbook workbook = new XSSFWorkbook(file);
-
             XSSFSheet sheet = workbook.getSheetAt(0);
-
             for (Row row : sheet) {
                 if (row.getRowNum() != 0) {
                     jpk.addInvoice(new Invoice("PLN", row.getCell(4).toString(), row.getCell(5).toString(), row.getCell(0).toString(),
@@ -38,22 +40,22 @@ public class Read {
         JPK invoices = new JPK();
         try (Reader in = new InputStreamReader(new FileInputStream(pathToFile), StandardCharsets.UTF_8)) {
             Iterable<CSVRecord> records = CSVParser.parse(in, CSVFormat.Builder.create(CSVFormat.TDF).setHeader().setSkipHeaderRecord(true).build());
-            for (CSVRecord record : records) {
-                invoices.addInvoice(new Invoice("PLN", record.get(4), record.get(5), record.get(0),
-                        record.get(1), "\"CORE LOGIC\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ", "ul. Feliksa Radwańskiego 15/1, 30-065 Kraków", "PL", "6762484560",
-                        record.get(2), record.get(4), moneyToDouble(record.get(11)), moneyToDouble(record.get(10)), moneyToDouble(record.get(12)),
+            for (CSVRecord myRecord : records) {
+                invoices.addInvoice(new Invoice("PLN", myRecord.get(4), myRecord.get(5), myRecord.get(0),
+                        myRecord.get(1), "\"CORE LOGIC\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ", "ul. Feliksa Radwańskiego 15/1, 30-065 Kraków", "PL", "6762484560",
+                        myRecord.get(2), myRecord.get(4), moneyToDouble(myRecord.get(11)), moneyToDouble(myRecord.get(10)), moneyToDouble(myRecord.get(12)),
                         false, false, false, false, false, false, false, false, false, false, false, "VAT"));
-                invoices.addInvoiceRow(new InvoiceRow(record.get(5), record.get(7).replace(",", "."), moneyToString(record.get(8)), moneyToString(record.get(11)), record.get(9)));
+                invoices.addInvoiceRow(new InvoiceRow(myRecord.get(5), myRecord.get(7).replace(",", "."), moneyToString(myRecord.get(8)), moneyToString(myRecord.get(11)), myRecord.get(9)));
             }
         }
         return invoices;
     }
 
     private static Double moneyToDouble(String s) {
-        return Double.parseDouble(s.replace("zł", "").replace(",", ".").replace(" ", "").replaceAll("\\u00A0",""));
+        return Double.parseDouble(s.replace("zł", "").replace(",", ".").replace(" ", "").replace("\u00A0",""));
     }
 
     private static String moneyToString(String s) {
-        return s.replace("zł", "").replace(",", ".").replace(" ", "").replaceAll("\\u00A0","");
+        return s.replace("zł", "").replace(",", ".").replace(" ", "").replace("\u00A0","");
     }
 }
