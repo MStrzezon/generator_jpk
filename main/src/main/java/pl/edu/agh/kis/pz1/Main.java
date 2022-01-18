@@ -9,8 +9,8 @@ import javax.xml.bind.JAXBException;
 import java.io.*;
 
 /**
- * Przykładowy kod do zajęć laboratoryjnych 2, 3, 4 z przedmiotu: Programowanie zaawansowane 1
- * @author Paweł Skrzyński
+ * XML generator from files: .csv and .xlsx
+ * @author Michał Strzeżoń
  */
 public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);

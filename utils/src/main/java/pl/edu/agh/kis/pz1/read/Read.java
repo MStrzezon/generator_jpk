@@ -13,11 +13,27 @@ import pl.edu.agh.kis.pz1.xml.JPK;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 
+/**
+ * Static class containing methods for reading files into the jpk class from:
+ * <ul>
+ *     <li>.xlsx</li>
+ *     <li>.csv</li>
+ * </ul>
+ */
 public class Read {
+    /**
+     * Prevents the object from being created.
+     */
     private Read() {
         throw new IllegalStateException("Utility class");
     }
 
+    /**
+     * Reads from .xlsx file to JPK class, which is JAXB class.
+     * @param pathToFile path to file, which we want to read.
+     * @return  JPK object.
+     * @throws IOException if reading fails.
+     */
     public static JPK readXLSX (String pathToFile) throws IOException {
         JPK jpk = new JPK();
         try (FileInputStream file = new FileInputStream(pathToFile)) {
@@ -36,6 +52,12 @@ public class Read {
         return jpk;
     }
 
+    /**
+     * Reads from .csv file to JPK class, which is JAXB class.
+     * @param pathToFile path to file, which we want to read.
+     * @return JPK object.
+     * @throws IOException if reading fails.
+     */
     public static JPK readCSV (String pathToFile) throws IOException {
         JPK invoices = new JPK();
         try (Reader in = new InputStreamReader(new FileInputStream(pathToFile), StandardCharsets.UTF_8)) {
@@ -51,10 +73,20 @@ public class Read {
         return invoices;
     }
 
+    /**
+     * Converts string as <code>"3 600 zł"</code> to double: <code>3600.00</code>.
+     * @param s String, which will be converted.
+     * @return double from string.
+     */
     private static Double moneyToDouble(String s) {
         return Double.parseDouble(s.replace("zł", "").replace(",", ".").replace(" ", "").replace("\u00A0",""));
     }
 
+    /**
+     * Converts string as <code>"3 600 zł"</code> to string: <code>"3600.00"</code>.
+     * @param s String, which will be converted.
+     * @return correct string.
+     */
     private static String moneyToString(String s) {
         return s.replace("zł", "").replace(",", ".").replace(" ", "").replace("\u00A0","");
     }
