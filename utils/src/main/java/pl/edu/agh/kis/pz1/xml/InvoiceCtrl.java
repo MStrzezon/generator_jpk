@@ -8,9 +8,12 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
+/**
+ * Class representing "<tns:InvoiceCtrl>""
+ */
 @Getter
 @Setter
-@XmlRootElement(name="tns:JPK")
+@XmlRootElement(name="tns:InvoiceCtrl")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class InvoiceCtrl {
     @XmlElement(name="LiczbaFaktur")

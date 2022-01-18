@@ -4,6 +4,9 @@ import lombok.*;
 
 import javax.xml.bind.annotation.*;
 
+/**
+ * Class representing "<tns:Faktura>""
+ */
 @Getter
 @Setter
 @AllArgsConstructor

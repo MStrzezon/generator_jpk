@@ -8,6 +8,9 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Class representing "<tns:JPK>""
+ */
 @Getter
 @Setter
 @XmlRootElement(name="tns:JPK")

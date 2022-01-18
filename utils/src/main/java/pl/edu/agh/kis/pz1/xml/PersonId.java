@@ -8,6 +8,9 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
+/**
+ * Class representing "<tns:IdentyfikatorPodmiotu>""
+ */
 @Getter
 @Setter
 @XmlRootElement(name="tns:IdentyfikatorPodmiotu")

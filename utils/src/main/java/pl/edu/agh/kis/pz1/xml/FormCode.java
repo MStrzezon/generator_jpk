@@ -5,6 +5,10 @@ import lombok.Setter;
 
 import javax.xml.bind.annotation.*;
 
+
+/**
+ * Class representing "<tns:KodFormularza>""
+ */
 @Getter
 @Setter
 @XmlRootElement(name="tns:KodFormularza")
