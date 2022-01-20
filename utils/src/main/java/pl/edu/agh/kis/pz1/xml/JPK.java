@@ -47,7 +47,7 @@ public class JPK {
     private InvoiceRowCtrl invoiceRowCtrl = new InvoiceRowCtrl();
 
     /**
-     * Check if List<Invoice> contains invoice with this id.
+     * Checks if List<Invoice> contains invoice with this id.
      * @param foreignId invoice id, which check
      * @return <p><code>true</code> if contains</p>
      *         <p><code>false</code> if not contains</p>
@@ -56,11 +56,21 @@ public class JPK {
         return invoices.stream().anyMatch(o -> o.getId().equals(foreignId));
     }
 
+    /**
+     * Gets Invoice with entered id.
+     * @param foreignId invoice id.
+     * @return Invoice
+     */
     public Invoice getInvoiceId(final String foreignId) {
         return invoices.stream().filter(invoice -> foreignId.equals(invoice.getId()))
                 .findAny()
                 .orElse(null);
     }
+
+    /**
+     * Adds invoice to List<Invoice>
+     * @param invoice invoice which is to be added.
+     */
     public void addInvoice(Invoice invoice) {
         invoiceCtrl.increaseValueOfInvoices(invoice.getSum());
         if (containsName(invoice.getId())) {
@@ -73,6 +83,10 @@ public class JPK {
         }
     }
 
+    /**
+     * Adds invoice row to List<InvoiceRow>
+     * @param invoiceRow invoice row which is to be added.
+     */
     public void addInvoiceRow(InvoiceRow invoiceRow) {
         invoiceRows.add(invoiceRow);
         invoiceRowCtrl.addInvoice();

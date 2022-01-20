@@ -27,10 +27,17 @@ public class InvoiceCtrl {
         valueOfInvoices = new BigDecimal(0);
     }
 
+    /**
+     * Increases number of invoices
+     */
     public void addInvoice() {
         numberOfInvoices++;
     }
 
+    /**
+     * Increases sum of value of invoices.
+     * @param value invoice row value
+     */
     public void increaseValueOfInvoices(BigDecimal value) {
         valueOfInvoices = valueOfInvoices.add(value);
     }
