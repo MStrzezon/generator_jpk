@@ -75,15 +75,6 @@ public class Read {
     }
 
     /**
-     * Converts string as <code>"3 600 zł"</code> to string: <code>"3600.00"</code>.
-     * @param s String, which will be converted.
-     * @return correct string.
-     */
-    private static String moneyToString(String s) {
-        return s.replace("zł", "").replace(",", ".").replace(" ", "").replace("\u00A0","");
-    }
-
-    /**
      * Converts string as <code>"3 600 zł"</code> to BigDecimal: <code>3600.00</code>.
      * @param s String, which will be converted.
      * @return double from string.
