@@ -76,7 +76,7 @@ public class JPKTest {
             for (CSVRecord myRecord : records) {
                 assertEquals(i, jpk.getInvoiceRows().size());
                 i++;
-                jpk.addInvoiceRow(new InvoiceRow(myRecord.get(5), myRecord.get(7).replace(",", "."), "11", "11", myRecord.get(9)));
+                jpk.addInvoiceRow(new InvoiceRow(myRecord.get(5), myRecord.get(7).replace(",", "."), new BigDecimal("11"), new BigDecimal("11"), myRecord.get(9)));
             }
         } catch (IOException e) {
             e.printStackTrace();

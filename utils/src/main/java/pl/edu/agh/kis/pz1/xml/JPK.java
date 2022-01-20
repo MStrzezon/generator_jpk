@@ -76,6 +76,6 @@ public class JPK {
     public void addInvoiceRow(InvoiceRow invoiceRow) {
         invoiceRows.add(invoiceRow);
         invoiceRowCtrl.addInvoice();
-        invoiceRowCtrl.increaseValueOfInvoices(Double.parseDouble(invoiceRow.getSum()));
+        invoiceRowCtrl.increaseValueOfInvoices(invoiceRow.getSum());
     }
 }

@@ -7,6 +7,7 @@ import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import java.math.BigDecimal;
 
 /**
  * Class representing "<tns:InvoiceRowCtrl>""
@@ -19,13 +20,18 @@ public class InvoiceRowCtrl {
     @XmlElement(name="LiczbaWierszyFaktur")
     private int numberOfInvoices;
     @XmlElement(name="WartoscWierszyFaktur")
-    private double valueOfInvoices;
+    private BigDecimal valueOfInvoices;
+
+    InvoiceRowCtrl() {
+        numberOfInvoices = 0;
+        valueOfInvoices = new BigDecimal("0");
+    }
 
     public void addInvoice() {
         numberOfInvoices++;
     }
 
-    public void increaseValueOfInvoices(double value) {
-        valueOfInvoices += value;
+    public void increaseValueOfInvoices(BigDecimal value) {
+        valueOfInvoices = valueOfInvoices.add(value);
     }
 }
