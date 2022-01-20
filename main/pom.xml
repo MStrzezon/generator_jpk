@@ -10,6 +10,7 @@
 
   <artifactId>main</artifactId>
   <name>Modul glowny aplikacji - klasa Main z metoda main</name>
+  <packaging>jar</packaging>
 
   <!-- Dodane przez pskrzynski -->
   <properties>
@@ -34,6 +35,8 @@
           <descriptorRefs>
             <descriptorRef>jar-with-dependencies</descriptorRef>
           </descriptorRefs>
+          <finalName>Generator</finalName>
+          <appendAssemblyId>false</appendAssemblyId>
           <archive>
             <manifest>
               <mainClass>pl.edu.agh.kis.pz1.Main</mainClass>
@@ -89,7 +92,7 @@
         </configuration>
       </plugin>
     </plugins>
-  </build> 
+  </build>
 
   <!-- najświeższa wersja w otwartym repo maven to 4.13.2 -->
   <dependencies>
