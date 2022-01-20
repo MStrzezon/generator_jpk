@@ -3,6 +3,7 @@ package pl.edu.agh.kis.pz1.xml;
 import lombok.*;
 
 import javax.xml.bind.annotation.*;
+import java.math.BigDecimal;
 
 /**
  * Class representing "<tns:Faktura>""
@@ -36,11 +37,11 @@ public class Invoice {
     @XmlElement(name="tns:P_6")
     private String deliveryEnd;
     @XmlElement(name="tns:P_13_1")
-    private double nettoValue;
+    private BigDecimal nettoValue;
     @XmlElement(name="tns:P_14_1")
-    private double nettoTax;
+    private BigDecimal nettoTax;
     @XmlElement(name="tns:P_15")
-    private double sum;
+    private BigDecimal sum;
     @XmlElement(name="tns:P_16")
     private boolean p16;
     @XmlElement(name="tns:P_17")
@@ -68,15 +69,15 @@ public class Invoice {
 
     Invoice() {}
 
-    public void increaseNettoValue(double value) {
-        this.nettoValue += value;
+    public void increaseNettoValue(BigDecimal value) {
+        this.nettoValue = this.nettoValue.add(value);
     }
 
-    public void increaseNettoTax(double value) {
-        this.nettoTax += value;
+    public void increaseNettoTax(BigDecimal value) {
+        this.nettoTax = this.nettoTax.add(value);
     }
 
-    public void increaseSum(double value) {
-        this.sum += value;
+    public void increaseSum(BigDecimal value) {
+        this.sum = this.sum.add(value);
     }
 }

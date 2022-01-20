@@ -46,6 +46,12 @@ public class JPK {
     @XmlElement(name="tns:FakturaWierszCtrl")
     private InvoiceRowCtrl invoiceRowCtrl = new InvoiceRowCtrl();
 
+    /**
+     * Check if List<Invoice> contains invoice with this id.
+     * @param foreignId invoice id, which check
+     * @return <p><code>true</code> if contains</p>
+     *         <p><code>false</code> if not contains</p>
+     */
     public boolean containsName(final String foreignId){
         return invoices.stream().anyMatch(o -> o.getId().equals(foreignId));
     }

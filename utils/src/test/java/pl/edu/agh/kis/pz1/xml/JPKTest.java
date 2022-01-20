@@ -8,6 +8,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.*;
+import java.math.BigDecimal;
 import java.nio.charset.StandardCharsets;
 
 import static org.junit.Assert.*;
@@ -37,7 +38,7 @@ public class JPKTest {
                 }
                 jpk.addInvoice(new Invoice("PLN", myRecord.get(4), myRecord.get(5), myRecord.get(0),
                         myRecord.get(1), "\"CORE LOGIC\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ", "ul. Feliksa Radwańskiego 15/1, 30-065 Kraków", "PL", "6762484560",
-                        myRecord.get(2), myRecord.get(4), 11.0, 11.0, 11.0,
+                        myRecord.get(2), myRecord.get(4), new BigDecimal("11.0"), new BigDecimal("11.0"), new BigDecimal("11.0"),
                         false, false, false, false, false, false, false, false, false, false, false, "VAT"));
             }
         } catch (IOException e) {
@@ -59,7 +60,7 @@ public class JPKTest {
                 }
                 jpk.addInvoice(new Invoice("PLN", myRecord.get(4), myRecord.get(5), myRecord.get(0),
                         myRecord.get(1), "\"CORE LOGIC\" SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ", "ul. Feliksa Radwańskiego 15/1, 30-065 Kraków", "PL", "6762484560",
-                        myRecord.get(2), myRecord.get(4), 11.0, 11.0, 11.0,
+                        myRecord.get(2), myRecord.get(4), new BigDecimal("11.0"), new BigDecimal("11.0"), new BigDecimal("11.0"),
                         false, false, false, false, false, false, false, false, false, false, false, "VAT"));
             }
         } catch (IOException e) {
