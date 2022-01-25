@@ -27,9 +27,9 @@ public class Main {
                 logger.error("Only .csv and .xlsx files are served.");
             }
         } catch (FileNotFoundException e) {
-            logger.error(args[0] + " nie istnieje.");
+            logger.error("{} nie istnieje.", args[0]);
         } catch (JAXBException e) {
-            logger.error(args[1] + "-nie istnieje taka sciezka.");
+            logger.error("{}-nie istnieje taka sciezka.", args[1]);
         } catch (IOException e) {
             logger.error(e.getMessage());
         }
