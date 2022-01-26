@@ -8,7 +8,7 @@ Aby uruchomić program:
 1) Należy wykonać komendę:
    ```mvn install```
 2) Należy uruchomić plik ```Generator.jar```.
-   poprzez komendę:\
+   poprzez komendę:
    * ```java -jar Generator.jar input.csv out.xml```
    lub
    * ```java -jar Generator.jar input.xlsx out.xml``` 
