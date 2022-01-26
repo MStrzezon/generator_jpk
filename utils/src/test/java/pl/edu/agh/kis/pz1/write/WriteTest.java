@@ -23,7 +23,7 @@ public class WriteTest {
     public void marshal() throws JAXBException {
         JPK jpk = new JPK();
         Write.marshal(jpk, "write_test.xml");
-        File f = new File("C:\\Users\\mstrz\\IdeaProjects\\Projekty\\generator\\utils\\write_test.xml");
+        File f = new File("write_test.xml");
         assertTrue(f.exists());
         assertTrue(f.delete());
     }
